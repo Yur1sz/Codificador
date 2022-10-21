@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="img/Dtafalonso-Modern-Xp-ModernXP-07-Keys.ico" type="image/x-icon">
+<link rel="stylesheet" href="./css/teste.css">
+<title>Codificação em Cifra e Base64 </title>
+</head>
+<body>
+<nav>
+   <h1 class="corh1">Codificação de texto para Cifra de Cesar e Base 64</h1>
+</nav>
+<main>
+<section>
+<form class="container-input">
+<label for="escolherDecodificacao">Selecione o tipo de criptografia:</label>
+<br>
+<select class="corselect" id="escolherDecodificacao">
+<option class="testei" value="optCifra">Cifra de César</option>
+<option class="testei" selected value="optBase64">Base64</option>
+</select>
+</div>
+<div class="buttonsRa">
+<div>
+<label for="radio1">Codificar</label>
+<input checked type="radio" value="radio1" name="teste" class="radioGeral" id="radio1">
+</div>
+<div>
+<label for="radio2">Decodificar</label>
+<input type="radio" name="teste" value="radio2" class="radioGeral" id="radio2">
+</div>
+</div>
+<div>
+<label id="inputTextoTitulo" for="inputTexto">Texto que será codificado:</label>
+<br>
+<textarea class="boxTexto" type="text" id="inputTexto"></textarea>
+</div>
+<br>
+<div id="Container">
+<label for="inputBase">Digite o valor de passos:</label>
+<br>
+<input class="input-resul" type="number" min="0" maxlength="2" placeholder="1-25" id="inputBase">
+</div>
+<br>
+  <div>
+  <input class="buttonSub" type="button" value="Confirmar" id="btn">
+   </div>
+  <div class="containerResul">
+  <br>
+  <textarea readonly class="resultado"> Resultado</textarea>
+   </div>
+  </form>
+  </section>
+   <section class="boxExplica">
+  <button class="explicaCesar" id="buttonModal">Explicação sobre a Cifra de Cesar</button>
+  <div class="diabox">
+   <dialog id="diaCifra" >
+
+     <h1  class="corh1">Cifra de Cesar </h1>
+  <p class="textDialog">
+    Em criptografia, a Cifra de César, também conhecida como cifra de troca, código de César ou troca de César, é uma das mais simples e conhecidas técnicas de criptografia.<br> É um tipo de cifra de substituição na qual cada letra do texto é substituída por outra, que se apresenta no alfabeto abaixo dela um número fixo de vezes. <br> Por exemplo, com uma troca de três posições, A seria substituído por D, B se tornaria E, e assim por diante. <br> O nome do método é em homenagem a Júlio César, que o usou para se comunicar com os seus generais.
+    <br> O processo de criptografia de uma cifra de César é frequentemente incorporado como parte de esquemas mais complexos, como a cifra de Vigenère, e continua tendo aplicações modernas, como no sistema ROT13.  <br>Como todas as cifras de substituição monoalfabéticas, a cifra de César é facilmente decifrada e na prática não oferece essencialmente nenhuma segurança na comunicação.
+     <br> 
+   
+  </p>
+
+    
+
+
+<br><br><br>
+
+<button class="buttonDia" id="fecharModal">Fechar</button>
+
+ </dialog>
+ </div>
+ <button class="explicaBase64" id="buttonBase">Explicação sobre Base64</button>
+ <div class="diaBase">
+
+ <dialog class="dialogBase "id="diaBase64">
+ <h1 class="corh1">Base64</h1>
+
+<p class="textDialog">
+    Base64 é um método para codificação de dados para transferência na Internet (codificação MIME para transferência de conteúdo). 
+    <br> 
+     É utilizado frequentemente para transmitir dados binários por meios de transmissão que lidam apenas com texto, como por exemplo para enviar arquivos anexos por e-mail.
+
+    É constituído por 64 caracteres ([A-Z],[a-z],[0-9], "/" e "+") que deram origem ao seu nome. O carácter "=" é utilizado como um sufixo especial e a especificação original (RFC 989) definiu que o símbolo "*" pode ser utilizado para delimitar dados convertidos, mas não criptografados, dentro de um stream.
+     <br>
+    Exemplo de codificação:
+    <br>
+    Texto original: Olá, mundo!
+    <br>
+    Texto convertido para Base64: T2zDoSwgbXVuZG8h
+    <br>
+    A codificação Base64 é frequentemente utilizada quando existe uma necessidade de transferência e armazenamento de dados binários para um dispositivo designado para trabalhar com dados textuais. 
+    <br>
+    Esta codificação é amplamente utilizada por aplicações em conjunto com a linguagem de marcação XML, possibilitando o armazenamento de dados binários em forma de texto.
+</p>
+<button class="buttonBase" id="fecharBase">Fechar</button>
+</dialog>
+</div>
+</section>
+</main>
+<footer>
+</footer>
+<script src="./scripts/main.js">
+</script>
+</body>
+</html>
