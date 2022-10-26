@@ -9,4 +9,4 @@
  <li>CSS</li>
 </ul>
 
-LINK DO SITE  128516 : https://yur1sz.github.io/Codificador/
+LINK DO SITE  U+1F604 : https://yur1sz.github.io/Codificador/
